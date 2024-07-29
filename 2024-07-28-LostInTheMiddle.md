@@ -14,14 +14,14 @@
 * 주어진 질문에 대해 단 한 개의 정답을 추출할 수 있는 문서를 포함한 k개의 문서를 context로 구성함
   * 정답 문서의 위치 / 정답 미포함 문서 갯수(k-1)를 바꿔가며 성능을 평가함
   * 모델은 MPT-30B-Instruct(8129토큰), LongChat-13B(16K), GPT-3.5-Turbo(4K, 16K), Claude-1.3(8K, 100K)를 사용함
-* Relevant information이 처음과 끝부분에 있을 때 성능이 높게 나타나며, 가운데로 가면 급격하게 성능 저하
+* Relevant information이 처음과 끝부분에 있을 때 성능이 높게 나타나며, 가운데로 가면 급격하게 성능 저하<br>
   ![image1](https://github.com/lih0905/coffee-augmented-rag/blob/main/images/240728/image1.png)
 * 짧은 문장에 대해 학습 시킨 후 긴 문장으로 확장한 모델은 짧은 문장 이하의 길이에서는 원래 모델과 확장 모델의 성능 차이가 거의 나타나지 않음
 
 ## LLM의 입력 정보로부터의 추론 능력 확인
 
 * 언어에 대한 이해를 배제하고 추론 능력만을 확인하기 위해 UUID들로 이루어진 key-value셋을 구축, 임의의 key를 입력으로 받았을 때 해당 value를 리턴하도록 데이터셋을 구축
-* Claude-1.3은 거의 완벽하게 다 맞추는 반면 GPT는 데이터의 길이가 길 경우 U-커브가 나타남
+* Claude-1.3은 거의 완벽하게 다 맞추는 반면 GPT는 데이터의 길이가 길 경우 U-커브가 나타남<br>
   ![image2](https://github.com/lih0905/coffee-augmented-rag/blob/main/images/240728/image2.png)
 
 ## 왜 정보 위치의 변화에 취약한 지에 대한 추론
@@ -32,14 +32,14 @@
 
 ## Context 길이에 따른 성능
 
-* 입력 document의 길이가 20개를 넘어가면 성능 개선 폭이 미미해짐
+* 입력 document의 길이가 20개를 넘어가면 성능 개선 폭이 미미해짐<br>
   ![image3](https://github.com/lih0905/coffee-augmented-rag/blob/main/images/240728/image3.png)
 
 ## Llama-3.1-8b 모델로 논문 task 수행한 결과
 
 * Closed-book/oracle 정확도
 
-  * 본문에 나온 기존 모델들 결과
+  * 본문에 나온 기존 모델들 결과<br>
     ![image5](https://github.com/lih0905/coffee-augmented-rag/blob/main/images/240728/image5.png)
 
   * Llama-3.1-8b(+Instruct) 모델을 이용해서 재실험한 결과
@@ -53,13 +53,13 @@
 
 * 20 Total Retrieved Documents (~4K tokens)
 
-  * 본문에 나온 Llama-2 모델의 성능 평가
+  * 본문에 나온 Llama-2 모델의 성능 평가<br>
     ![image4](https://github.com/lih0905/coffee-augmented-rag/blob/main/images/240728/image4.png)
 
   * Llama-3.1-8b(+Instruct) 모델을 이용해서 재실험한 결과
 
     * 기존 가장 좋은 성능을 보이던 Llama-2-70b-chat 보다도 훨씬 좋은 성능을 보이지만 U-커브는 여전히 발생
-    * Llama-3.1-8b-Instruct 모델은 U-커브는 완화되나 여전히 문맥 처음에 등장할 때 가장 성능이 뛰어남
+    * Llama-3.1-8b-Instruct 모델은 U-커브는 완화되나 문맥 처음에 등장할 때 가장 성능이 뛰어난 부분은 동일
 
     | Index                 | 1st   | 5th   | 10th  | 15th  | 20th  |
     | --------------------- | ----- | ----- | ----- | ----- | ----- |
