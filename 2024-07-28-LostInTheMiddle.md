@@ -54,7 +54,7 @@
 * 20 Total Retrieved Documents (~4K tokens)
 
   * 본문에 나온 Llama-2 모델의 성능 평가
-    ![image4](https://github.com/lih0905/coffee-augmented-rag/blob/main/images/240728/image4.png, width=250)
+    ![image4](https://github.com/lih0905/coffee-augmented-rag/blob/main/images/240728/image4.png)
 
   * Llama-3.1-8b(+Instruct) 모델을 이용해서 재실험한 결과
 
@@ -66,4 +66,4 @@
     | Llama-3.1-8b          | 68.9% | 55.4% | 55.4% | 55.3% | 63.7% |
     | Llama-3.1-8b-Instruct | 73.8% | 67.4% | 66.4% | 66.0% | 67.9% |
 
-    !['image6'](https://github.com/lih0905/coffee-augmented-rag/blob/main/images/240728/image6.png, width=300)
+    !['image6'](https://github.com/lih0905/coffee-augmented-rag/blob/main/images/240728/image6.png)
