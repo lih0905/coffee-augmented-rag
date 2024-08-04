@@ -5,5 +5,6 @@
 | 날짜   | 논문                                                         | 리뷰                                                         |
 | ------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | 240722 | [CRAG - Comprehensive RAG Benchmark](https://arxiv.org/abs/2406.04744v1) | [2024-07-21-CRAG.md](https://github.com/lih0905/coffee-augmented-rag/blob/main/2024-07-21-CRAG.md) |
-| 240729 | [Lost in the Middle: How Language Models Use Long Contexts](https://arxiv.org/pdf/2307.03172) | [2024-07-28-LostInTheMiddle.md](https://github.com/lih0905/coffee-augmented-rag/blob/main/2024-07-28-LostInTheMiddle.md)|
+| 240729 | [Lost in the Middle: How Language Models Use Long Contexts](https://arxiv.org/pdf/2307.03172) | [2024-07-28-LostInTheMiddle.md](https://github.com/lih0905/coffee-augmented-rag/blob/main/2024-07-28-LostInTheMiddle.md) |
+| 240804 | [RAFT: Adapting Language Model to Domain Specific RAG](https://arxiv.org/pdf/2403.10131) | [2024-08-04-RAFT.md](https://github.com/lih0905/coffee-augmented-rag/blob/main/2024-08-04-RAFT.md) |
 |        |                                                              |                                                              |
